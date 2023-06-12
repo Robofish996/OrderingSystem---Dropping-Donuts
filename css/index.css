@@ -6,6 +6,9 @@ body {
     background-image: linear-gradient(to bottom, #ffffff, #8a8a8a);
     margin-bottom: 0;
     border: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
   }
   
 
@@ -15,7 +18,7 @@ body {
     text-align: center;
     color: black;
     text-decoration: underline;
-    font-size: 85px;
+    font-size: 83px;
     opacity: 100%;
   }
   
