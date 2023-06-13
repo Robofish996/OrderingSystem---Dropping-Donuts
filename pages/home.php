@@ -53,7 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Function to calculate the price of a single donut with add-ons
 function calcPriceOfDonut($glaze, $toppings, $filling)
 {
-    $basePrice = 10; // Price of a plain donut
+    // Price of a plain donut
+    $basePrice = 4; 
 
     // Additional cost for glaze
     $glazeCost = ($glaze !== 'plain') ? 2 : 0;

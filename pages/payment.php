@@ -21,7 +21,7 @@
             isset($_GET['quantity']) &&
             isset($_GET['subtotal'])
         ) {
-            // Get the DATA from home.php
+            // Get the data from home.php
             $username = $_GET['username'];
             $glaze = $_GET['glaze'];
             $toppings = explode(",", $_GET['toppings']);
@@ -29,16 +29,20 @@
             $quantity = $_GET['quantity'];
             $subtotal = $_GET['subtotal'];
 
+            // Calculate the price per donut
+            $pricePerDonut = $subtotal / $quantity;
+
             // Generate a purchase order number
             $purchaseOrderNumber = generatePurchaseOrderNumber();
 
             echo "<h1>Payment Details</h1>";
-            echo "<p>Purchase Order Number: $purchaseOrderNumber</p>";
+            echo "<p>Purchase Order Number:<span class=purchaseOrder>$purchaseOrderNumber</span></p>";
             echo "<p>Username: $username</p>";
             echo "<p>Glaze: $glaze</p>";
             echo "<p>Toppings: " . implode(", ", $toppings) . "</p>";
             echo "<p>Filling: $filling</p>";
             echo "<p>Quantity: $quantity</p>";
+            echo "<p>Price per Donut: R$pricePerDonut</p>";
             echo "<p>Subtotal: R$subtotal</p>";
 
             // Add the Place Order button
