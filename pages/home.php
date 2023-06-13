@@ -91,13 +91,13 @@ function getOrderTotal($pricePerDonut, $quantity)
 
 <body>
 
-    <h1>Welcome to Dropping Donuts</h1>
+    <h1 class="heading">Welcome to Dropping Donuts</h1>
     <h2>Logged in as: <?php echo $_SESSION['username']; ?></h2>
 
     <a href="logout.php">Logout</a>
 
     <!-- Order form -->
-    <h2>Place Your Order</h2>
+    <h2 class="subHeading">Place Your Order</h2>
     <?php if (!empty($errors)) { ?>
         <div class="error">
             <?php foreach ($errors as $error) { ?>
