@@ -1,5 +1,3 @@
-
-
 /* Body styles */
 body {
     font-family: Arial, sans-serif;
@@ -12,21 +10,6 @@ body {
     min-height: 100vh;
    
 }
-
-/* Container styles */
-.container {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-image: url('./images/pug-2970827_1920.png');
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-}
-
 /* Heading styles */
 h1 {
     font-size: 48px;
